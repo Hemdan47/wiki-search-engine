@@ -20,7 +20,7 @@ public class AppStartupRunner implements CommandLineRunner {
     @Override
     public void run(String... args) {
 
-        var docs = crawler.crawl(new String[]{"https://en.wikipedia.org/wiki/List_of_pharaohs" , "https://en.wikipedia.org/wiki/Pharaoh"}, 10);
+        var docs = crawler.crawl(new String[]{"https://en.wikipedia.org/wiki/List_of_pharaohs" , "https://en.wikipedia.org/wiki/Pharaoh"}, 30);
         invertedIndex.build(docs);
         documentVectorBuilder.build(invertedIndex);
         System.out.println("Data crawling completed. Crawled " + docs.size() + " documents.");
