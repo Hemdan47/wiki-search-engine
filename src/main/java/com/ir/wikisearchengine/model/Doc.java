@@ -1,4 +1,4 @@
-package com.ir.wikisearchengine.crawler;
+package com.ir.wikisearchengine.model;
 
 import lombok.*;
 

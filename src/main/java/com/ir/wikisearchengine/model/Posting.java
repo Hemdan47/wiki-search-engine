@@ -1,4 +1,4 @@
-package com.ir.wikisearchengine.indexing;
+package com.ir.wikisearchengine.model;
 
 
 import lombok.EqualsAndHashCode;

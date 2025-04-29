@@ -1,14 +1,17 @@
 package com.ir.wikisearchengine.crawler;
 
+import com.ir.wikisearchengine.model.Doc;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import java.util.*;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Crawler {
     private static final String WIKIPEDIA_PREFIX = "https://en.wikipedia.org";
-    private static final int TIMEOUT = 1000;
+    private static final int TIMEOUT = 10000;
 
     public List<Doc> crawl(String[] seeds , int maxPages) {
         Set<String> visited = new HashSet<>();

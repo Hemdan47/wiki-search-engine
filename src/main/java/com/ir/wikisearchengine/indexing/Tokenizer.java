@@ -11,6 +11,7 @@ public class Tokenizer {
 
         for (String token : tokens) {
             if (valid(token)) {
+                token = token.toLowerCase();
                 result.add(Stemmer.stem(token));
             }
         }
